@@ -59,7 +59,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 ```
-  npm
+  bundle
 ```
 
 ### Setup
@@ -76,23 +76,15 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```
-  npm install
+  bundle install
 ```
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command using cmd in the directory of project:
 
 ```
-  npm start
-```
-
-### Run tests
-
-To run tests using jest, run the following command:
-
-```
-  npm test
+  ruby main.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

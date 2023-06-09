@@ -45,12 +45,10 @@ def create_student(people)
   age = gets.chomp.to_i
   print 'Name: '
   name = gets.chomp
-  print 'Has parent permission? (Y/N): '
-  permission = gets.chomp == 'Y'
   student_classroom = Classroom.new('Classroom 1')
-  person = Student.new(student_classroom, age, name: name, parent_permission: permission)
+  person = Student.new(student_classroom, age: age, name: name)
   people.push(person)
-  puts 'Person created successfully!'
+  puts 'Student created successfully!'
   puts
 end
 
@@ -59,9 +57,9 @@ def create_teacher(people)
   age = gets.chomp.to_i
   print 'Name: '
   name = gets.chomp
-  person = Teacher.new(age, '', name: name)
+  person = Teacher.new(age: age, name: name)
   people.push(person)
-  puts 'Person created successfully!'
+  puts 'Teacher created successfully!'
   puts
 end
 
