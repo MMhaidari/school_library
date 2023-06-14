@@ -1,3 +1,22 @@
 [
-
+  {
+    "type": "Teacher",
+    "name": "mohsen",
+    "age": 23,
+    "specialization": "Unknown"
+  },
+  {
+    "type": "Student",
+    "name": "mhoammad",
+    "age": 25,
+    "parent_permission": true,
+    "classroom": "#<Classroom:0x00000196cfc46820>"
+  },
+  {
+    "type": "Student",
+    "name": "mohse",
+    "age": 0,
+    "parent_permission": true,
+    "classroom": "#<Classroom:0x00000196cfc1df10>"
+  }
 ]

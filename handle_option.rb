@@ -1,19 +1,18 @@
 def handle_option(option, app)
-  case option
-  when 1
-    app.list_all_books
-  when 2
-    app.list_all_people
-  when 3
-    app.create_person
-  when 4
-    app.create_book
-  when 5
-    app.create_rental
-  when 6
-    app.list_rentals
-  when 7
-    app.quit
+  option_actions = {
+    1 => :list_all_books,
+    2 => :list_all_people,
+    3 => :create_person,
+    4 => :create_book,
+    5 => :create_rental,
+    6 => :list_rentals,
+    7 => :quit
+  }
+
+  action = option_actions[option]
+
+  if action
+    app.send(action)
   else
     puts 'Invalid option!'
   end

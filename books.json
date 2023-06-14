@@ -1,4 +1,10 @@
 [
-  "{\"title\":\"alcamist\",\"author\":\"mohsen\",\"rentals\":[]}",
-  "{\"title\":\"mbook\",\"author\":\"mohsenm\",\"rentals\":[]}"
+  {
+    "title": "alcamist",
+    "author": "mohsen"
+  },
+  {
+    "title": "simple",
+    "author": "frank"
+  }
 ]

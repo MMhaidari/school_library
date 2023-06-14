@@ -13,12 +13,12 @@ class App
   include SaveData
   include LoadData
   attr_accessor :books, :people, :rentals
-  
+
   def initialize
     @books = []
     @people = []
     @rentals = []
-    LoadData
+    load_data
   end
 
   def list_all_books
@@ -152,7 +152,7 @@ class App
   end
 
   def quit
-    save_data(@books, @people, @rentals)
+    save_data
     puts 'Goodbye!'
   end
 end
