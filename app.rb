@@ -6,13 +6,19 @@ require_relative 'rental'
 require_relative 'student'
 require_relative 'teacher'
 require_relative './modules/save_data'
-include SaveData
+require_relative './modules/load_data'
+
 
 class App
+  include SaveData
+  include LoadData
+  attr_accessor :books, :people, :rentals
+  
   def initialize
     @books = []
     @people = []
     @rentals = []
+    LoadData
   end
 
   def list_all_books
