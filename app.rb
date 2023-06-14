@@ -4,6 +4,7 @@ require_relative 'book'
 require_relative 'rental'
 require_relative 'student'
 require_relative 'teacher'
+require_relative './modules/save_data'
 
 def list_all_books(books)
   puts 'List of books:'
