@@ -26,4 +26,12 @@ class Student < Person
       'classroom' => @classroom
     }.to_json
   end
+
+  def self.from_json(json_data, classrooms)
+    student_data = JSON.parse(json_data)
+    classroom = classrooms.find { |c| c.label == student_data['classroom']['label'] }
+
+    Student.new(classroom, age: student_data['age'], name: student_data['name'],
+                parent_permission: student_data['parent_permission'])
+  end
 end
