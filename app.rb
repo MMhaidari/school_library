@@ -8,7 +8,6 @@ require_relative 'teacher'
 require_relative './modules/save_data'
 require_relative './modules/load_data'
 
-
 class App
   include SaveData
   include LoadData
