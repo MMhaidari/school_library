@@ -1,3 +1,4 @@
+require 'json'
 require_relative 'person'
 require_relative 'classroom'
 require_relative 'book'
@@ -5,6 +6,7 @@ require_relative 'rental'
 require_relative 'student'
 require_relative 'teacher'
 require_relative './modules/save_data'
+include SaveData
 
 def list_all_books(books)
   puts 'List of books:'
@@ -137,5 +139,7 @@ def print_rental_info(rental, index)
 end
 
 def quit
+  SaveData
   puts 'Goodbye!'
 end
+
