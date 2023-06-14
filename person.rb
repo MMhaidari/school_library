@@ -28,4 +28,13 @@ class Person
   def can_use_services?
     @parent_permission || of_age?
   end
+
+  def to_json(*_args)
+    {
+      'type' => 'Person',
+      'name' => @name,
+      'age' => @age,
+      'parent_permission' => @parent_permission
+    }.to_json
+  end
 end
