@@ -1,4 +1,3 @@
-require 'rspec'
 require_relative '../classes/classroom'
 
 describe Classroom do
@@ -14,7 +13,7 @@ describe Classroom do
 
   describe '#add_student' do
     it 'adds a student to the classroom and sets the student\'s classroom' do
-      allow(student).to receive(:classroom=)  # Mock the classroom= method
+      allow(student).to receive(:classroom=)
 
       classroom.add_student(student)
       expect(classroom.students).to include(student)
